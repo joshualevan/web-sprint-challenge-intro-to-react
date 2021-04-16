@@ -42,7 +42,7 @@ After imported from React as useState `import React, { useState } from 'react`, 
 
 `3. Describe props.`
 
-Props, or the properties object, is an object of properties with values created by a parent component to pass down data and states to its child. These properties are set inside an instance of a child component inside the parent `<Child name = {userName} age = {userAge}/>` and the props object is received by the child as its argument `const Child = props => {...}` or `const Child = ({ name, age }) => {...}`. Propertites allow the parent inject its data into its child's structure, allowing dynamic inputs from higher up in a component tree.
+Props, or the properties object, is an object of properties with values created by a parent component to pass down data and states to its child. These properties are set inside an instance of a child component nested inside the parent `<Child name = {userName} age = {userAge} />` and the props object is received by the child as its argument `const Child = props => {...}` or `const Child = ({ name, age }) => {...}`. Propertites allow the parent to inject its data into its child's structure, allowing dynamic inputs from higher up in a component tree.
 
 `4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?`
 
