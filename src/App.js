@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 import Character from './components/Character';
+import Details from './components/Details';
 import {BASE_URL, API_KEY} from './constants/index';
 
 const App = () => {
@@ -18,9 +19,6 @@ const App = () => {
     setCurrentCharacterId(null);
   }
 
-  // Fetch characters from the API in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
   useEffect(() => {
     axios.get(`${BASE_URL}${API_KEY}`)
       .then(res => {setCharacters(res.data); console.log(characters)})
@@ -31,9 +29,12 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
       {
-        // characters.map((character) => {
-        //   return <Character key={character.name} dataSet={character} />;
-        // })
+        characters.map((character) => {
+          return <Character key={character.name} dataSet={character} open={openDetails}/>;
+        })
+      }
+      {
+        currentCharacterId && <Details characterId = {currentCharacterId} close={closeDetails} dataSet = {characters} />
       }
     </div>
   );
