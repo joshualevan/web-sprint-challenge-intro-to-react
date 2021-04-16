@@ -34,10 +34,9 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 ````React requires less load time due it's lack in need to re-render the entire DOM upon every change to the DOM through its use of the Virtual DOM. Only updated states require a new rendering. In addition, cycles can be further controled by side-effects. React hooks allow this fuctionality.
 
-```React also allows for the building and stacking of React components which are modular nuggets of elements with functionality. Not only can these pieces be built and assembled in a more organized way, React can also pass information from parent to child through the use of property objects (props).
+React also allows for the building and stacking of React components which are modular nuggets of elements with functionality. Not only can these pieces be built and assembled in a more organized way, React can also pass information from parent to child through the use of property objects (props).```
 
 1. Describe component state.
-````
 
 1. Describe props.
 
@@ -110,3 +109,4 @@ Follow these steps for completing your project.
 Set up your fork on Github to [submit via Codegrade](https://www.notion.so/lambdaschool/Submitting-an-assignment-via-Code-Grade-A-Step-by-Step-Walkthrough-07bd65f5f8364e709ecb5064735ce374), pushing commits to your `<firstName-lastName>` branch.
 
 Your code will be reviewed over the next few days. Read [these instructions](https://www.notion.so/How-to-View-Feedback-in-CodeGrade-c5147cee220c4044a25de28bcb6bb54a) to learn how to view feedback in CodeGrade.
+````
