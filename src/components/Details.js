@@ -81,7 +81,7 @@ const Details = ({ characterId, close }) => {
                         <h2 key = {name}>{name}</h2>
                         <p key = {gender}>Gender: <span>{gender}</span></p>
                         <p key = {height}>Height: <span>{height} cm ({toFeet(height)})</span></p>
-                        <p key = {mass}>Mass: <span>{mass} kg ({toPounds(mass)}lbs)</span></p>
+                        <p key = {mass}>Mass: <span>{mass} kg ({toPounds(mass)} lbs)</span></p>
                         <p key = {birth_year}>Birth Year: <span>{parseInt(birth_year)} years Before the Battle of Yavin</span></p>
                         <button onClick={close}>close</button>
                     </StyledDetails> 
