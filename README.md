@@ -32,7 +32,12 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+````React requires less load time due it's lack in need to re-render the entire DOM upon every change to the DOM through its use of the Virtual DOM. Only updated states require a new rendering. In addition, cycles can be further controled by side-effects. React hooks allow this fuctionality.
+
+```React also allows for the building and stacking of React components which are modular nuggets of elements with functionality. Not only can these pieces be built and assembled in a more organized way, React can also pass information from parent to child through the use of property objects (props).
+
 1. Describe component state.
+````
 
 1. Describe props.
 
