@@ -34,7 +34,7 @@ const App = () => {
         })
       }
       {
-        currentCharacterId && <Details characterId = {currentCharacterId} close={closeDetails} dataSet = {characters} />
+        currentCharacterId && <Details characterId = {currentCharacterId} close={closeDetails}/>
       }
     </div>
   );
