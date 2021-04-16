@@ -18,14 +18,17 @@ const StyledName = styled.div`
         width: 100px;
         margin-left: 2rem;
         border-radius: 0;
-        background-color: yellow;
+        background-color: ${pr => pr.theme.yellow};
         border: none;
         padding: 0;
         cursor: pointer;
         outline: inherit;
+        transition: all 1s ease;
 
         &:hover {
-            background-color: red;
+            box-shadow: 0px 0px 15px ${pr => pr.theme.yellow};
+            background-color: yellow;
+            transition: all 0.5s ease;
         }
     }
 `
@@ -34,7 +37,7 @@ const Character = ({ dataSet, open }) => {
     return (
         <StyledName>
             <h2>{dataSet.name}</h2>
-            <button onClick={() => open(dataSet.name)}>Star Stats</button>
+            <button onClick={() => open(dataSet.name)}>Stellar Stats</button>
         </StyledName>
     )
 }

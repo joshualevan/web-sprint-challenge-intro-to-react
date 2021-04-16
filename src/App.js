@@ -12,7 +12,7 @@ const StyledHeader = styled.h1`
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 4rem;
-  color: yellow;
+  color: ${pr => pr.theme.yellow};
 `
 
 const App = () => {
