@@ -22,15 +22,19 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
   useEffect(() => {
-    axios.get(BASE_URL)
-      .then(res => setCharacters(res.data))
-      .catch(err => console.log(err))
+    axios.get(`${BASE_URL}${API_KEY}`)
+      .then(res => {setCharacters(res.data); console.log(characters)})
+      .catch(err => console.log('WHOA, NELLY!'))
   }, [])
 
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      {/*iterate through API and list <Character key = {res.data.id} dataProp = {res.data}/>*/}
+      {
+        // characters.map((character) => {
+        //   return <Character key={character.name} dataSet={character} />;
+        // })
+      }
     </div>
   );
 }
