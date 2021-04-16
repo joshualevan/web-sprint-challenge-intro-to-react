@@ -35,14 +35,14 @@ const StyledDetails = styled.div`
     padding: 0;
     cursor: pointer;
     outline: inherit;
-    transition: all 0.5s ease;
+    transition: all .75s ease-out;
 
     &:hover {
         background-color: black;
         height: 20px;
         width: 180px;
         margin: 35px 0 35px 0;
-        transition: all 1s ease-out;
+        transition: all .25s ease-in;
     }
 
   @media(max-width:600px){
