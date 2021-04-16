@@ -37,6 +37,7 @@ React requires less load time due it's lack in need to re-render the entire DOM 
 React also allows for the building and stacking of React components which are modular nuggets of elements with functionality. Not only can these pieces be built and assembled in a more organized way, React can also pass information from parent to child through the use of property objects (props).
 
 `2. Describe component state.`
+After imported from React as useState(`import React, { useState } from 'react`), a slice of state can set an initial state, store the current state, and allow for a callback function to update a state (`const [currentState, setCurrentState] = useState(initialState)`). The state can then be passed down the component tree through props.
 
 `3. Describe props.`
 
