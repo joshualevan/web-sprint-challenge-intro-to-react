@@ -42,9 +42,11 @@ After imported from React as useState `import React, { useState } from 'react`, 
 
 `3. Describe props.`
 
-Props, or the properties object, is an object of properties with values created by a parent component to pass down data and states to its child. These properties are set inside an instance of a child component nested inside the parent `<Child name = {userName} age = {userAge} />` and the props object is received by the child as its argument `const Child = props => {...}` or `const Child = ({ name, age }) => {...}`. Propertites allow the parent to inject its data into its child's structure, allowing dynamic inputs from higher up in a component tree.
+`Props`, or the properties object, is an object of properties with values created by a parent component to pass down data and states to its child. These properties are set inside an instance of a child component nested inside the parent `<Child name = {userName} age = {userAge} />` and the props object is received by the child as its argument `const Child = props => {...}` or `const Child = ({ name, age }) => {...}`. Propertites allow the parent to inject its data into its child's structure, allowing dynamic inputs from higher up in a component tree.
 
 `4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?`
+
+A `side effect` is a term used for anything that affects something outside its scope. In React we use the `useEffect()` hook to control what to do when something is rendered— such as fetching API data. `useEffect()` takes 2 parameters— a callback function and an array of dependencies, which listens for a change to trigger the callback function `useEffect(()=> {}, [])`
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
