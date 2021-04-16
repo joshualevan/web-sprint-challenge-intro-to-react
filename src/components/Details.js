@@ -11,19 +11,36 @@ const Details = ({ characterId, close }) => {
       .catch(err => console.log('WHOA, NELLY!'))
   }, [characterId])
 
+  const toFeet = cm => {
+      const inches = cm * .393701;
+      const feet = Math.floor(inches/ 12);
+      const remainderIncehes = Math.floor(inches%12);
+
+      return `${feet}' ${remainderIncehes}"`
+  }
+
   return (
-    <div>
+    <>
       {
         details.map(character => {
-            if(character.name === characterId) {
+            const {name, mass, birth_year, height, gender} = character;
+
+            if(name === characterId) {
                 return (
-                    <p></p>
+                    <div>
+                        <h1 key = {name}>{name}</h1>
+                        <p key = {gender}>Gender: {gender}</p>
+                        <p key = {height}>Height: {height} cm {toFeet(height)}</p>
+                        <p key = {mass}>Mass: {mass} kg</p>
+                        <p key = {birth_year}>Birth Year: {parseInt(birth_year)} years Before the Battle of Yavin</p>
+                    </div>
+                    
                 )
             } 
         })
       }
       <button onClick={close}>X</button>
-    </div>
+    </>
   );
 }
 
