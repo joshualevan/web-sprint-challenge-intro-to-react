@@ -28,16 +28,21 @@ const StyledDetails = styled.div`
     color: white;
     height: 50px;
     width: 100px;
-    margin: 2rem 0;
+    margin: 20px 0;
     border-radius: 0;
-    background-color: gray;
+    background-color: rgb(9, 21, 37);
     border: none;
     padding: 0;
     cursor: pointer;
     outline: inherit;
+    transition: all 0.5s ease;
 
     &:hover {
         background-color: black;
+        height: 20px;
+        width: 180px;
+        margin: 35px 0 35px 0;
+        transition: all 1s ease-out;
     }
 
   @media(max-width:600px){
