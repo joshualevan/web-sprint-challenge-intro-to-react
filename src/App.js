@@ -32,7 +32,7 @@ const App = () => {
   useEffect(() => {
     axios.get(`${BASE_URL}${API_KEY}`)
       .then(res => {setCharacters(res.data); console.log(characters)})
-      .catch(err => console.log('WHOA, NELLY!'))
+      .catch(err => console.log('WHOA, NELLY!'+ err))
   }, [characters])
 
   return (

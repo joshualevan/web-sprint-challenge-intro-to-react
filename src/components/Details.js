@@ -22,6 +22,9 @@ const StyledDetails = styled.div`
   span {
     color: black;
   }
+  @media(max-width:600px){
+    width: 100%;
+  }
 
   button {
     font-family: 'Montserrat', sans-serif;
@@ -45,9 +48,7 @@ const StyledDetails = styled.div`
         transition: all .25s ease-in;
     }
 
-  @media(max-width:600px){
-    width: 100%;
-  }
+  
 `
 
 const Details = ({ characterId, close }) => {
